@@ -11,8 +11,7 @@ def ping_pong():
 
 @app.route('/hello', methods=['POST'])
 def hello():
-    message = request.get_json()
-    message['message'] = 'Hello ' + message['name']
+    message = 'Hello Joel'
     return jsonify(message)
 
 @app.route('/bug', methods=['POST'])
